@@ -1,0 +1,37 @@
+<h2>Книжный каталог</h2>
+<p>На этой странице доступен выбор книжных изданий для последующего изучения</p>
+
+
+<form action="/catalog" method="POST" role="form">
+  <div class="form-group">
+    <label>URL книги</label>
+    <input name="bookurl" type="text" class="form-control" placeholder="URL книги" value="<%= @bookurl %>">
+  </div>
+
+  <div class="form-group">
+    <label>Ваш сайт:</label>
+    <select name="book-site" class="form-control">
+      <option>ozon.ru</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Добавить</button>
+</form>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th> </tr>
+    </thead> <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><%= @messege %></p>

@@ -1,0 +1,15 @@
+<h2>Admin page</h2>
+<p>You're now logged in</p>
+<h2>Записавшиеся клиенты:</h2>
+<%= 
+@users = IO.readlines("./public/users.txt", "r")
+@users.each do |line|
+print line.to_s
+end %>
+
+<h2>Обращения:</h2>
+<%= 
+@users = IO.readlines("./public/messege.txt", "r")
+@users.each do |line|
+print line.to_s
+end %>
